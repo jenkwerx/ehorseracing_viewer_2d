@@ -1,0 +1,447 @@
+
+
+<html>
+
+<head>
+
+<TITLE>DerbyFever.com - The original, large scale multi user horse racing manager</TITLE>
+<meta name="Keywords"
+      content="horse racing game, horseracing game, horse ragin manager, horseracing manager, horseracing simulation, hrose racing simulation">
+<meta name="Description"
+      content="DerbyFever.com - The original large scale horse racing simulation game and management game">
+ 
+
+</head>
+
+<BODY LINK="#333333" VLINK="#333333" bgcolor=white ALINK="#333333">
+
+<center>
+
+<div class="whitewrap" id="mainSpan" >
+
+<table  cellpadding=0 cellspacing=0 bgcolor=white>
+<tr>
+ <td  bgcolor=white align=center>
+
+
+<script language="JavaScript" src="./js/jsviewer.js"></script>
+
+<script type="text/javascript">
+
+
+		var images = new Array()
+		function preload() {
+			for (i = 0; i < preload.arguments.length; i++) {
+				images[i] = new Image()
+				images[i].src = preload.arguments[i];
+				//alert(preload.arguments[i]);
+			}
+		}
+		preload(
+			"./images/gate.gif",
+			"./images/turf1.gif",
+			"./images/dirt1.gif",
+			"./images/poly1.gif",
+		);
+
+</script>
+
+
+
+
+<form>
+<div name=placer id=placer style="width:120; height:20; z-index:190; color:white; position: absolute; top: 55px; left:620px; background-color:#000066;">
+
+</div>
+<input name=onco id=onco type=hidden value=0>
+<input name=oncox id=oncox type=hidden value=0>
+<input name=hitonce type=hidden id=hitonce value=''>
+<input type=hidden name=horseinfox1 id=horseinfox1 value="7|7|DRAGON DAGGERS||1||5|218|5|294|3|70|1|0|923|695|333|519|111.732543172066||">
+ <input type=hidden name=horseinfo1 id=horseinfo1 value="7|7|DRAGON DAGGERS||1||5|218|5|294|3|70|1|0|923|695|333|519|111.732543172066|||">
+ <input type=hidden name=horseinfox2 id=horseinfox2 value="10|10|THE LAST EMPIRE||1||6|262|6|366|4|158|2|88|591|153|217|989|109.69850505088||">
+ <input type=hidden name=horseinfo2 id=horseinfo2 value="10|10|THE LAST EMPIRE||1||6|262|6|366|4|158|2|88|591|153|217|989|109.69850505088|||">
+ <input type=hidden name=horseinfox3 id=horseinfox3 value="9|9|GENERAL'S COMRADE||2||9|440|9|643|9|417|3|229|250|702|911|756|106.49255782842||">
+ <input type=hidden name=horseinfo3 id=horseinfo3 value="9|9|GENERAL'S COMRADE||2||9|440|9|643|9|417|3|229|250|702|911|756|106.49255782842|||">
+ <input type=hidden name=horseinfox4 id=horseinfox4 value="4|4|STREET CRY NEVER||1||7|294|7|427|6|275|4|279|863|892|745|424|105.343833128769||">
+ <input type=hidden name=horseinfo4 id=horseinfo4 value="4|4|STREET CRY NEVER||1||7|294|7|427|6|275|4|279|863|892|745|424|105.343833128769|||">
+ <input type=hidden name=horseinfox5 id=horseinfox5 value="5|5|LUKA D'ORO||5||2|49|2|59|1|0|5|281|276|625|687|109|105.30786607658||">
+ <input type=hidden name=horseinfo5 id=horseinfo5 value="5|5|LUKA D'ORO||5||2|49|2|59|1|0|5|281|276|625|687|109|105.30786607658|||">
+ <input type=hidden name=horseinfox6 id=horseinfox6 value="6|6|DEADLY ZOUS||1||8|396|8|582|8|405|6|316|984|729|26|843|104.487848712266||">
+ <input type=hidden name=horseinfo6 id=horseinfo6 value="6|6|DEADLY ZOUS||1||8|396|8|582|8|405|6|316|984|729|26|843|104.487848712266|||">
+ <input type=hidden name=horseinfox7 id=horseinfox7 value="1|1|HENNYBERG||1||1|0|1|0|2|33|7|488|166|280|960|861|100.55786315709||">
+ <input type=hidden name=horseinfo7 id=horseinfo7 value="1|1|HENNYBERG||1||1|0|1|0|2|33|7|488|166|280|960|861|100.55786315709|||">
+ <input type=hidden name=horseinfox8 id=horseinfox8 value="2|2|DINGKOM||5||3|80|3|134|5|204|8|677|544|892|893|392|96.2492998416391||">
+ <input type=hidden name=horseinfo8 id=horseinfo8 value="2|2|DINGKOM||5||3|80|3|134|5|204|8|677|544|892|893|392|96.2492998416391|||">
+ <input type=hidden name=horseinfox9 id=horseinfox9 value="8|8|RAQS SHARQI||1||10|581|10|892|10|810|9|775|468|565|269|745|93.9990047999799||">
+ <input type=hidden name=horseinfo9 id=horseinfo9 value="8|8|RAQS SHARQI||1||10|581|10|892|10|810|9|775|468|565|269|745|93.9990047999799|||">
+ <input type=hidden name=horseinfox10 id=horseinfox10 value="3|3|FRANKEL'S SPEIGHT||1||4|153|4|254|7|355|10|837|917|510|421|741|92.5798369527433||">
+ <input type=hidden name=horseinfo10 id=horseinfo10 value="3|3|FRANKEL'S SPEIGHT||1||4|153|4|254|7|355|10|837|917|510|421|741|92.5798369527433|||">
+ <input type=hidden name=hnum id=hnum value="10">
+
+<input type=hidden name=numin id=numin value="10">
+<input type=hidden name=distance id=distance value="5500">
+<input type=hidden name=surface id=surface value="Turf">
+
+
+
+
+<div name=z id=z style=" position: absolute; overflow:hidden;  top:0; left:0; z-index:2;">
+<div name=bgt1 id=bgt1  style="position: absolute; overflow:hidden; width: 930px; height:450px; background-image:url('./images/turf1.gif'); z-index:3;">
+</div>
+<table name=bgt id=bgt width=830 cellpadding=2 cellspacing=0>
+
+<tr><td width=33% align=center >
+</td>
+<td width=34% align=center  >5.50 F / 1,100 M </td>
+<td width=33%  align=center >&nbsp;Turf </td>
+</tr>
+
+
+
+<tr><td height=430 width=830 colspan=3>
+
+
+
+</td></tr>
+
+<tr style="background-color:#999999;">
+
+<td align=center   >
+<input name=startrace type=button onclick="runrace();" value="Run Race!">
+</td>
+
+
+<td colspan=
+2 align=center>
+&copy;1998 - 2023 | <a href="http://DerbyFever.com">DerbyFever.com</a> / <a href="http://smartacre.com">Smartacre, LLC</a> | All Rights Reserved
+</td></tr>
+</table>
+</div>
+
+
+
+
+<div name=gates id=gates  style="z-index:100; top:400; left:0; position: absolute;">
+<table cellpadding=0 cellspacing=0 width=760 height=30 background='./images/fence.gif'>
+<tr><td>
+</td></tr>
+</table>
+</div>
+<div name=gatestop id=gatestop  style="z-index:100; top:20; left:0; position: absolute;">
+<table cellpadding=0 cellspacing=0 width=760 height=30 background='./images/fence.gif'>
+<tr><td>
+</td></tr>
+</table>
+</div>
+
+<div  style="z-index:150; position: absolute; top: 20px; left:610px; background-color:#000066; ">
+<table cellpadding=0 cellspacing=0 background=bgblue.gif>
+<tr><td height=410 width=220 background=bgblue.gif>
+&nbsp;
+</td></tr></table>
+</div>
+
+
+
+<div name=fini id=fini style="z-index:2; position: absolute; top: 20px; left:760px; background-color:#000066;">
+<table cellpadding=0 cellspacing=0>
+<tr><td height=420 width=20>
+<image src='./images/finishline.jpg'>
+</td></tr></table>
+</div>
+
+
+
+<div name=horse7 id=horse7 style="z-index:12; position: absolute; top: 180; left:450;">
+<img src='./images/horse2b.gif'>
+</div>
+
+
+<div name=divno7 id=divno7 style="font-size:8px; z-index:37; position: absolute; top: 198; left:502;">
+7
+</div>
+<div name=horseno7 id=horseno7 style="z-index:151;  font-size:9px; position: absolute; 
+top: 200; left:620; color:white">
+7 - DRAGON DAGGERS
+</div>
+
+
+<div name=lba7 id=lba7 style="z-index:152;  font-size:9px; position: absolute; 
+top: 198; left:780; color:white">
+<table width=100% ><tr><td align=left>
+<div name=lb7 id=lb7 style="z-index:153; font-size:9px; color:white;">
+</div>
+</td></tr>
+</table>
+
+</div>
+
+
+
+
+<div name=horse10 id=horse10 style="z-index:15; position: absolute; top: 240; left:450;">
+<img src='./images/horse3b.gif'>
+</div>
+
+
+<div name=divno10 id=divno10 style="font-size:8px; z-index:40; position: absolute; top: 258; left:503;">
+10
+</div>
+<div name=horseno10 id=horseno10 style="z-index:151;  font-size:9px; position: absolute; 
+top: 260; left:620; color:white">
+10 - THE LAST EMPIRE
+</div>
+
+
+<div name=lba10 id=lba10 style="z-index:152;  font-size:9px; position: absolute; 
+top: 258; left:780; color:white">
+<table width=100% ><tr><td align=left>
+<div name=lb10 id=lb10 style="z-index:153; font-size:9px; color:white;">
+</div>
+</td></tr>
+</table>
+
+</div>
+
+
+
+
+<div name=horse9 id=horse9 style="z-index:14; position: absolute; top: 220; left:450;">
+<img src='./images/horse4c.gif/'>
+</div>
+
+
+<div name=divno9 id=divno9 style="font-size:8px; z-index:39; position: absolute; top: 238; left:502;">
+9
+</div>
+<div name=horseno9 id=horseno9 style="z-index:151;  font-size:9px; position: absolute; 
+top: 240; left:620; color:white">
+9 - GENERAL'S COMRADE
+</div>
+
+
+<div name=lba9 id=lba9 style="z-index:152;  font-size:9px; position: absolute; 
+top: 238; left:780; color:white">
+<table width=100% ><tr><td align=left>
+<div name=lb9 id=lb9 style="z-index:153; font-size:9px; color:white;">
+</div>
+</td></tr>
+</table>
+
+</div>
+
+
+
+
+<div name=horse4 id=horse4 style="z-index:9; position: absolute; top: 120; left:450;">
+<img src='./images/horse1b.gif'>
+</div>
+
+
+<div name=divno4 id=divno4 style="font-size:8px; z-index:34; position: absolute; top: 138; left:502;">
+4
+</div>
+<div name=horseno4 id=horseno4 style="z-index:151;  font-size:9px; position: absolute; 
+top: 140; left:620; color:white">
+4 - STREET CRY NEVER
+</div>
+
+
+<div name=lba4 id=lba4 style="z-index:152;  font-size:9px; position: absolute; 
+top: 138; left:780; color:white">
+<table width=100% ><tr><td align=left>
+<div name=lb4 id=lb4 style="z-index:153; font-size:9px; color:white;">
+</div>
+</td></tr>
+</table>
+
+</div>
+
+
+
+
+<div name=horse5 id=horse5 style="z-index:10; position: absolute; top: 140; left:450;">
+<img src='./images/horse2b.gif'>
+</div>
+
+
+<div name=divno5 id=divno5 style="font-size:8px; z-index:35; position: absolute; top: 158; left:502;">
+5
+</div>
+<div name=horseno5 id=horseno5 style="z-index:151;  font-size:9px; position: absolute; 
+top: 160; left:620; color:white">
+5 - LUKA D'ORO
+</div>
+
+
+<div name=lba5 id=lba5 style="z-index:152;  font-size:9px; position: absolute; 
+top: 158; left:780; color:white">
+<table width=100% ><tr><td align=left>
+<div name=lb5 id=lb5 style="z-index:153; font-size:9px; color:white;">
+</div>
+</td></tr>
+</table>
+
+</div>
+
+
+
+
+<div name=horse6 id=horse6 style="z-index:11; position: absolute; top: 160; left:450;">
+<img src='./images/horse3b.gif'>
+</div>
+
+
+<div name=divno6 id=divno6 style="font-size:8px; z-index:36; position: absolute; top: 178; left:502;">
+6
+</div>
+<div name=horseno6 id=horseno6 style="z-index:151;  font-size:9px; position: absolute; 
+top: 180; left:620; color:white">
+6 - DEADLY ZOUS
+</div>
+
+
+<div name=lba6 id=lba6 style="z-index:152;  font-size:9px; position: absolute; 
+top: 178; left:780; color:white">
+<table width=100% ><tr><td align=left>
+<div name=lb6 id=lb6 style="z-index:153; font-size:9px; color:white;">
+</div>
+</td></tr>
+</table>
+
+</div>
+
+
+
+
+<div name=horse1 id=horse1 style="z-index:6; position: absolute; top: 60; left:450;">
+<img src='./images/horse4b.gif'>
+</div>
+
+
+<div name=divno1 id=divno1 style="font-size:8px; z-index:31; position: absolute; top: 78; left:502;">
+1
+</div>
+<div name=horseno1 id=horseno1 style="z-index:151;  font-size:9px; position: absolute; 
+top: 80; left:620; color:white">
+1 - HENNYBERG
+</div>
+
+
+<div name=lba1 id=lba1 style="z-index:152;  font-size:9px; position: absolute; 
+top: 78; left:780; color:white">
+<table width=100% ><tr><td align=left>
+<div name=lb1 id=lb1 style="z-index:153; font-size:9px; color:white;">
+</div>
+</td></tr>
+</table>
+
+</div>
+
+
+
+
+<div name=horse2 id=horse2 style="z-index:7; position: absolute; top: 80; left:450;">
+<img src='./images/horse1b.gif'>
+</div>
+
+
+<div name=divno2 id=divno2 style="font-size:8px; z-index:32; position: absolute; top: 98; left:502;">
+2
+</div>
+<div name=horseno2 id=horseno2 style="z-index:151;  font-size:9px; position: absolute; 
+top: 100; left:620; color:white">
+2 - DINGKOM
+</div>
+
+
+<div name=lba2 id=lba2 style="z-index:152;  font-size:9px; position: absolute; 
+top: 98; left:780; color:white">
+<table width=100% ><tr><td align=left>
+<div name=lb2 id=lb2 style="z-index:153; font-size:9px; color:white;">
+</div>
+</td></tr>
+</table>
+
+</div>
+
+
+
+
+<div name=horse8 id=horse8 style="z-index:13; position: absolute; top: 200; left:450;">
+<img src='./images/horse2b.gif'>
+</div>
+
+
+<div name=divno8 id=divno8 style="font-size:8px; z-index:38; position: absolute; top: 218; left:502;">
+8
+</div>
+<div name=horseno8 id=horseno8 style="z-index:151;  font-size:9px; position: absolute; 
+top: 220; left:620; color:white">
+8 - RAQS SHARQI
+</div>
+
+
+<div name=lba8 id=lba8 style="z-index:152;  font-size:9px; position: absolute; 
+top: 218; left:780; color:white">
+<table width=100% ><tr><td align=left>
+<div name=lb8 id=lb8 style="z-index:153; font-size:9px; color:white;">
+</div>
+</td></tr>
+</table>
+
+</div>
+
+
+
+
+<div name=horse3 id=horse3 style="z-index:8; position: absolute; top: 100; left:450;">
+<img src='./images/horse3b.gif'>
+</div>
+
+
+<div name=divno3 id=divno3 style="font-size:8px; z-index:33; position: absolute; top: 118; left:502;">
+3
+</div>
+<div name=horseno3 id=horseno3 style="z-index:151;  font-size:9px; position: absolute; 
+top: 120; left:620; color:white">
+3 - FRANKEL'S SPEIGHT
+</div>
+
+
+<div name=lba3 id=lba3 style="z-index:152;  font-size:9px; position: absolute; 
+top: 118; left:780; color:white">
+<table width=100% ><tr><td align=left>
+<div name=lb3 id=lb3 style="z-index:153; font-size:9px; color:white;">
+</div>
+</td></tr>
+</table>
+
+</div>
+
+
+
+
+<div name=gate1 id=gate1 style="z-index:199; position: absolute; top: 50; left:450;">
+<img src='./images/gate.gif'>
+</div>
+
+
+</form>
+
+
+</td>
+
+</tr>
+
+
+
+</table>
+
+
+</div>
+</center>
+
+</body>
+</html>
+
